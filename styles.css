@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: url('black.jpg');
+    background: url('black.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 5rem 0;
