@@ -71,3 +71,18 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+.social-media {
+    background-color: #000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-media a {
+    margin: 0 1rem;
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
