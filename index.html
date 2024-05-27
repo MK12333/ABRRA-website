@@ -93,5 +93,23 @@ Cactus9music@gmail.com</p>
             <p>&copy; 2024 MK-Studio. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+    let currentRow = 0;
+    function nextRow() {
+        const rows = document.querySelectorAll('.music-row');
+        rows[currentRow].style.display = 'none';
+        currentRow = (currentRow + 1) % rows.length;
+        rows[currentRow].style.display = 'flex';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const rows = document.querySelectorAll('.music-row');
+        rows.forEach((row, index) => {
+            if (index !== currentRow) {
+                row.style.display = 'none';
+            }
+        });
+    });
+    </script>
 </body>
 </html>
