@@ -80,6 +80,8 @@ footer {
 
 .social-media a {
     margin: 0 1rem;
+    text-decoration: none;
+    color: transparent;
 }
 
 .social-media img {
