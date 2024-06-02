@@ -105,6 +105,16 @@ footer {
     width: 48%;
 }
 
+@media (max-width: 768px) {
+    .music-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .music-row iframe {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
 button {
     padding: 0.5rem 1rem;
     background-color: #fff;
