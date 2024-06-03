@@ -32,8 +32,8 @@ header {
 
 /* תמונה עגולה של האמן */
 .artist-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -44,7 +44,7 @@ header {
 }
 
 /* עיצוב למובייל */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .site-header {
         flex-direction: column;
     }
