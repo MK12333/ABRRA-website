@@ -5,26 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABRRA-MUSIC</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        // Function to detect if the site is running inside a WebView
-        function isWebView() {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            return /android/i.test(userAgent) && window.external && window.external.invoke;
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            if (isWebView()) {
-                var links = document.querySelectorAll('.social-media a');
-                links.forEach(function(link) {
-                    link.addEventListener('click', function(event) {
-                        event.preventDefault();
-                        var url = link.getAttribute('href');
-                        window.open(url, '_blank');
-                    });
-                });
-            }
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -35,19 +15,19 @@
         </div>
     </header>
     <div class="social-media">
-    <a href="www.facebook.com/ABRRAMUSIC/" target="_blank">
+    <a href="www.facebook.com/ABRRAMUSIC/" target="_blank" rel="noopener noreferrer">
         <img src="images/facebook.png" alt="Facebook">
     </a>
-    <a href="https://www.tiktok.com/@abrra13" target="_blank">
+    <a href="https://www.tiktok.com/@abrra13" target="_blank" rel="noopener noreferrer">
         <img src="images/tiktok.png" alt="TikTok">
     </a>
-    <a href="https://www.instagram.com/abrramusic" target="_blank">
+    <a href="https://www.instagram.com/abrramusic" target="_blank" rel="noopener noreferrer">
         <img src="images/instagram.png" alt="Instagram">
     </a>
-    <a href="https://www.youtube.com/@abrramusic5569" target="_blank">
+    <a href="https://www.youtube.com/@abrramusic5569" target="_blank" rel="noopener noreferrer">
         <img src="images/youtube.png" alt="YouTube">
     </a>
-    <a href="https://soundcloud.com/abrramusic" target= "_blank">
+    <a href="https://soundcloud.com/abrramusic" target="_blank" rel="noopener noreferrer">
 	<img src="images/soundcloud.png" alt= "SoundCloud">
     </a>
     </div>
