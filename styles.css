@@ -142,7 +142,7 @@ footer {
     width: 48%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .music-row {
         flex-direction: column;
         align-items: center;
@@ -150,6 +150,10 @@ footer {
     .music-row iframe {
         width: 100%;
         margin-bottom: 1rem;
+    }
+    .social-media a {
+        width: 48px;
+        height: 48px;
     }
 }
 button {
@@ -162,4 +166,9 @@ button {
 
 button:hover {
     background-color: #ddd;
+}
+
+button, .social-media a {
+    min-width: 48px;
+    min-height: 48px;
 }
